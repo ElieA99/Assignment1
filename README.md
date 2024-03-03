@@ -1,25 +1,25 @@
-Academy Assignment # 1
+Academy Assignment  
 =================================================================================================================
-Create your own repository on Github
-Create a node JS project called: "Audio Library"
-Setup the basic project and node modules
-Prepare 3 models: Category Model, Albums Model and Song Model as explained below.
-Create Function for adding a category in a category service
-Create functions for Albums (Create, Update, Read and Delete)
-Create Function for adding songs related to album
-Create Function for deleting songs
-Create Function to get Album by ID (basic album info)
+http://localhost:5000
+All routes are tested using postman
 
-Create a function "testCase" in app.js that will show us the following scenario:
-Create a category in the DB named "Pop" with any description.
-Create a category in the DB named "Jazz" with any description.
-Create an album in the DB named "My Album" with any description and add 3 songs to it with the category "pop".
-Create an album in the DB name "Temp Album"  with any description and add 3 songs to it with the category "Jazz".
-Update the necessary fields on the albums when adding songs.
-Delete the second album.
-Delete the final song of the first album.
+CATEGORY ROUTE:
+To get all category  /cat/get
+To add new category /cat/post
 
-Category Model: name, description, createdAt, updatedAt
-Album Model: name, description, showNbTracks, createdAt, updatedAt, lastSongAddedAt
-Tracks Model: name, singer, category, album
+ALBUM ROUTE:
+To get all data       /album/get
+To add new album     /album/post
+To delete an album  /album/delete followed by the id
+To update an album /album/update followed by the id
+To get by id      /album/get followed by the id 
+
+USER ROUTE
+To create new user /user/signup
+To Login          /user/login   
+
+SONG ROUTE
+To create new song       /song/add
+To delete a song        /song/delete followed by the id
+To get song by albumID /song/getid followed by the album id
 =================================================================================================================
